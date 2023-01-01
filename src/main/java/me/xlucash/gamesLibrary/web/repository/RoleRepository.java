@@ -1,9 +1,10 @@
 package me.xlucash.gamesLibrary.web.repository;
 
-import me.xlucash.gamesLibrary.web.model.Game;
+import me.xlucash.gamesLibrary.web.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GameRepository extends JpaRepository<Game,Long> {
+public interface RoleRepository extends JpaRepository<Role, Long> {
+    Role findByName(String name);
 }
