@@ -51,7 +51,7 @@ public class SecurityConfig {
         http.authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
                 .antMatchers("/api/users").hasAuthority(Role.ROLE_ADMIN)
-                .antMatchers(HttpMethod.GET, "/api/games").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/games/**").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
