@@ -23,15 +23,15 @@ import java.util.Map;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
-
-    @Autowired
     private AuthenticationManager authenticationManager;
-
-    @Autowired
     private UserService userService;
-
-    @Autowired
     private JwtTokenUtil jwtTokenUtil;
+
+    public AuthController(AuthenticationManager authenticationManager, UserService userService, JwtTokenUtil jwtTokenUtil) {
+        this.authenticationManager = authenticationManager;
+        this.userService = userService;
+        this.jwtTokenUtil = jwtTokenUtil;
+    }
 
     @PostMapping("login")
     public ResponseEntity<Map<String, String>> login(@RequestBody UserLoginDTO request) {
