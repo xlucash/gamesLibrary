@@ -1,5 +1,5 @@
 # GamesLibrary - crud restful api
-This project is a RESTful API for creating, reading, updating, and deleting information about video games in a database. It was created using Spring Boot, Spring Security, JWT, PostgreSQL, JPA, and Hibernate.
+This project is a RESTful API for creating, reading, updating, and deleting information about video games in a database. It was created using Spring Boot, Spring Security, JWT, PostgreSQL, JPA.
 
 ## Technologies and tools
 - Java
