@@ -3,10 +3,7 @@ This project is a RESTful API for creating, reading, updating, and deleting info
 
 ## Technologies and tools
 - Java
-- Spring Boot
-- Spring Security
-- Spring Web
-- Hibernate
+- Spring
 - JPA
 - PostgreSQL
 
